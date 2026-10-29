@@ -7,6 +7,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Mobile-Commerce-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Mobile-Commerce-Platform?style=flat-square&color=blue" alt="Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Mobile-Commerce-Platform/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Mobile-Commerce-Platform?style=flat-square&color=red" alt="Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Mobile-Commerce-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Mobile-Commerce-Platform?style=flat-square&color=green" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 <p align="center">
@@ -33,6 +34,8 @@ This repository tracks notable **SaaS platforms** and **open-source projects** i
   - [Mobile Commerce Frameworks, Starters & SDKs](#mobile-commerce-frameworks-starters--sdks)
   - [Headless Commerce Engines with Mobile APIs](#headless-commerce-engines-with-mobile-apis)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
 - [⚠️ Disclaimer](#️-disclaimer)
 
 ---
@@ -106,6 +109,23 @@ We welcome community contributions! Follow these steps to submit additions or up
    - For open-source repos: valid GitHub URL and star count badge (`style=social&color=white`) linking to `/stargazers`.
 4. 💾 **Commit your changes** (`git commit -m "Add [Tool Name] mobile commerce platform"`).
 5. 🚀 **Push to the branch** and **open a Pull Request**.
+
+---
+
+## 💖 Support
+
+If you find this curated list helpful for your mobile commerce journey, building D2C apps, or researching tools, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** new tools, SDKs, and updates.
+- 📢 **Share it** on X / Twitter, LinkedIn, Reddit, or Discord.
+- ☕ **Buy me a coffee**: Support ongoing open-source research and maintenance via my [**GitHub Sponsor Dashboard**](https://github.com/sponsors/ishandutta2007). Thank you for your support! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Mobile-Commerce-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Mobile-Commerce-Platform&type=date&legend=top-left)
 
 ---
 
