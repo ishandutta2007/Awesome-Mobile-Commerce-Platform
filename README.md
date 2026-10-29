@@ -67,11 +67,11 @@ Below is a detailed benchmark of leading commercial mobile commerce platforms, s
 
 ## 💻 Open-Source GitHub Projects
 
-The open-source mobile commerce ecosystem spans native UI starter kits, cross-platform Flutter/React Native frameworks, mobile Storefront SDKs, and headless commerce engines. Projects are sorted descending by GitHub star count.
+The open-source mobile commerce ecosystem spans native UI starter kits, cross-platform Flutter/React Native frameworks, mobile Storefront SDKs, and headless commerce engines. Projects are sorted descending by GitHub Stars_Count.
 
 ### Mobile Commerce Frameworks, Starters & SDKs
 
-| 📦 Repository | ⭐ Stars | 🔤 Technology | 📝 Description & Architecture |
+| 📦 Repository | ⭐ GitHub_Stars | 🔤 Technology | 📝 Description & Architecture |
 | :--- | :--- | :--- | :--- |
 | **[TheAlphamerc/flutter_ecommerce_app](https://github.com/TheAlphamerc/flutter_ecommerce_app)** | [![Stars](https://img.shields.io/github/stars/TheAlphamerc/flutter_ecommerce_app?style=social&color=white)](https://github.com/TheAlphamerc/flutter_ecommerce_app/stargazers) | Flutter / Dart | Full-featured mobile e-commerce application with clean UI/UX, product catalog, cart state management, and animated transitions. |
 | **[robertodevs/flutter_ecommerce_template](https://github.com/robertodevs/flutter_ecommerce_template)** | [![Stars](https://img.shields.io/github/stars/robertodevs/flutter_ecommerce_template?style=social&color=white)](https://github.com/robertodevs/flutter_ecommerce_template/stargazers) | Flutter / Dart | Minimalist, production-ready e-commerce mobile template featuring modern typography, category carousels, and modular state architecture. |
@@ -88,7 +88,7 @@ The open-source mobile commerce ecosystem spans native UI starter kits, cross-pl
 
 Mobile applications frequently rely on decoupled, headless e-commerce backends delivering GraphQL and REST endpoints:
 
-| 📦 Repository | ⭐ Stars | 🔤 Technology | 📝 Description |
+| 📦 Repository | ⭐ GitHub_Stars | 🔤 Technology | 📝 Description |
 | :--- | :--- | :--- | :--- |
 | **[medusajs/medusa](https://github.com/medusajs/medusa)** | [![Stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers) | Node.js / TypeScript | The leading open-source alternative to Shopify; headless architecture powering custom mobile app checkout, multi-warehouse, and digital goods. |
 | **[bagisto/bagisto](https://github.com/bagisto/bagisto)** | [![Stars](https://img.shields.io/github/stars/bagisto/bagisto?style=social&color=white)](https://github.com/bagisto/bagisto/stargazers) | PHP / Laravel | Open-source enterprise e-commerce platform with GraphQL APIs for building Flutter and React Native mobile storefronts. |
@@ -106,7 +106,7 @@ We welcome community contributions! Follow these steps to submit additions or up
 3. ✏️ **Add your entry** to `README.md` in the appropriate table, ensuring:
    - Factual pricing with specific starting plan rates and free trial details.
    - Company scale / market valuation information.
-   - For open-source repos: valid GitHub URL and star count badge (`style=social&color=white`) linking to `/stargazers`.
+   - For open-source repos: valid GitHub URL and Stars_Count badge (`style=social&color=white`) linking to `/stargazers`.
 4. 💾 **Commit your changes** (`git commit -m "Add [Tool Name] mobile commerce platform"`).
 5. 🚀 **Push to the branch** and **open a Pull Request**.
 
