@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0a0e1a" />
+    </linearGradient>
+
+    <!-- Vibrant Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+    .badge-label {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      fill: #e2e8f0;
+    }
+    .grid-line {
+      stroke: #1e293b;
+      stroke-width: 1;
+      opacity: 0.35;
+    }
+    /* Dynamic pulsing animations */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.45; }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes floatPhone {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(1deg); }
+    }
+    @keyframes dashStream {
+      to { stroke-dashoffset: -40; }
+    }
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: 1000px 250px; }
+    .card-float-1 { animation: floatCard1 6s ease-in-out infinite; }
+    .card-float-2 { animation: floatCard2 7s ease-in-out infinite; }
+    .phone-float { animation: floatPhone 5s ease-in-out infinite; transform-origin: center; }
+    .pulse-stream { stroke-dasharray: 6 6; animation: dashStream 2s linear infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Ambient Orbs (in background) -->
+  <g class="orb-1">
+    <circle cx="220" cy="100" r="140" fill="#4f46e5" filter="url(#glow)" />
+  </g>
+  <g class="orb-2">
+    <circle cx="1020" cy="220" r="160" fill="#ec4899" filter="url(#glow)" />
+  </g>
+  <circle cx="680" cy="300" r="100" fill="#06b6d4" opacity="0.2" filter="url(#glow)" />
+
+  <!-- Subtle Blueprint Tech Grid in Background -->
+  <g class="grid-line">
+    <line x1="60" y1="0" x2="60" y2="360" />
+    <line x1="180" y1="0" x2="180" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="420" y1="0" x2="420" y2="360" />
+    <line x1="540" y1="0" x2="540" y2="360" />
+    <line x1="660" y1="0" x2="660" y2="360" />
+    <line x1="780" y1="0" x2="780" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1020" y1="0" x2="1020" y2="360" />
+    <line x1="1140" y1="0" x2="1140" y2="360" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+  </g>
+
+  <!-- Interactive Dynamic Illustrations on the Right Side (Non-intrusive) -->
+  <g transform="translate(820, 45)">
+    <!-- Animated Connecting Stream Lines -->
+    <path d="M -40 140 Q 60 70 140 120" fill="none" stroke="#6366f1" stroke-width="2" class="pulse-stream" opacity="0.6" />
+    <path d="M 60 210 Q 150 260 260 170" fill="none" stroke="#ec4899" stroke-width="2" class="pulse-stream" opacity="0.5" />
+
+    <!-- Mobile Device Illustration with Dynamic Elements -->
+    <g class="phone-float">
+      <!-- Phone Mockup Frame -->
+      <rect x="80" y="20" width="145" height="255" rx="24" fill="#0f172a" stroke="#334155" stroke-width="3" />
+      <rect x="86" y="26" width="133" height="243" rx="19" fill="#020617" />
+      
+      <!-- Phone Notch / Island -->
+      <rect x="127" y="32" width="50" height="10" rx="5" fill="#1e293b" />
+      
+      <!-- Screen UI Content Mockup -->
+      <rect x="96" y="55" width="70" height="8" rx="4" fill="#6366f1" />
+      <circle cx="204" cy="59" r="6" fill="#ec4899" />
+      
+      <!-- Store Banner Card in Phone -->
+      <rect x="96" y="73" width="113" height="48" rx="8" fill="url(#accentGrad)" opacity="0.85" />
+      <text x="103" y="102" font-family="system-ui" font-size="10" font-weight="700" fill="#ffffff">FLASH SALE 🔥</text>
+      
+      <!-- Product Items Grid in Phone -->
+      <rect x="96" y="130" width="52" height="56" rx="6" fill="#1e293b" />
+      <circle cx="122" cy="150" r="12" fill="#38bdf8" opacity="0.8" />
+      <rect x="102" y="172" width="40" height="5" rx="2.5" fill="#64748b" />
+      
+      <rect x="157" y="130" width="52" height="56" rx="6" fill="#1e293b" />
+      <circle cx="183" cy="150" r="12" fill="#a855f7" opacity="0.8" />
+      <rect x="163" y="172" width="40" height="5" rx="2.5" fill="#64748b" />
+      
+      <!-- Checkout Button in Phone -->
+      <rect x="96" y="196" width="113" height="18" rx="5" fill="#10b981" />
+      <text x="126" y="209" font-family="system-ui" font-size="8" font-weight="700" fill="#ffffff">Buy Now • 1-Click</text>
+
+      <!-- Bottom Nav Bar -->
+      <line x1="96" y1="230" x2="209" y2="230" stroke="#1e293b" stroke-width="1" />
+      <circle cx="114" cy="242" r="4" fill="#6366f1" />
+      <circle cx="152" cy="242" r="4" fill="#64748b" />
+      <circle cx="191" cy="242" r="4" fill="#64748b" />
+      <!-- Home bar indicator -->
+      <rect x="128" y="258" width="50" height="3" rx="1.5" fill="#475569" />
+    </g>
+
+    <!-- Floating Dynamic Card 1: Push Notification -->
+    <g class="card-float-1" transform="translate(-30, 60)">
+      <rect width="140" height="52" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" filter="url(#subtleGlow)" />
+      <circle cx="22" cy="26" r="12" fill="#6366f1" />
+      <text x="17" y="31" font-family="system-ui" font-size="14">🔔</text>
+      <text x="42" y="22" font-family="system-ui" font-size="10" font-weight="700" fill="#ffffff">90%+ Open Rate</text>
+      <text x="42" y="38" font-family="system-ui" font-size="9" fill="#94a3b8">Instant Push Sync</text>
+    </g>
+
+    <!-- Floating Dynamic Card 2: Conversion Boost Badge -->
+    <g class="card-float-2" transform="translate(160, 195)">
+      <rect width="135" height="50" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5" filter="url(#subtleGlow)" />
+      <circle cx="20" cy="25" r="11" fill="#065f46" />
+      <text x="14" y="30" font-family="system-ui" font-size="12">🚀</text>
+      <text x="38" y="22" font-family="system-ui" font-size="10" font-weight="700" fill="#34d399">+3.2x Conversion</text>
+      <text x="38" y="38" font-family="system-ui" font-size="9" fill="#94a3b8">Native Checkout</text>
+    </g>
+  </g>
+
+  <!-- Left Side: Clean, High-Contrast Foreground Typography -->
+  <g transform="translate(70, 75)">
+    <!-- Top Super-header Pill Badge -->
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#1e293b" stroke="#3730a3" stroke-width="1" />
+    <circle cx="14" cy="14" r="5" fill="#22c55e" />
+    <text x="28" y="18" class="badge-label" fill="#a5b4fc">E-COMMERCE ECOSYSTEM</text>
+
+    <!-- Main Title (Never obscured) -->
+    <text x="0" y="75" class="title-text">Mobile Commerce Platform</text>
+
+    <!-- Subtitle Description -->
+    <text x="0" y="112" class="subtitle-text">Curated Native App Builders, Headless Storefronts &amp; Mobile SDKs</text>
+
+    <!-- Tech Feature Pills -->
+    <g transform="translate(0, 142)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="130" height="34" rx="8" fill="#1e1e38" stroke="#4338ca" stroke-width="1" />
+      <text x="14" y="21" class="badge-label" fill="#c7d2fe">📱 iOS &amp; Android</text>
+
+      <!-- Pill 2 -->
+      <rect x="142" y="0" width="138" height="34" rx="8" fill="#182739" stroke="#0284c7" stroke-width="1" />
+      <text x="156" y="21" class="badge-label" fill="#bae6fd">⚡ Headless APIs</text>
+
+      <!-- Pill 3 -->
+      <rect x="292" y="0" width="134" height="34" rx="8" fill="#2b1a38" stroke="#a21caf" stroke-width="1" />
+      <text x="306" y="21" class="badge-label" fill="#f5d0fe">🔔 Push Engines</text>
+
+      <!-- Pill 4 -->
+      <rect x="438" y="0" width="130" height="34" rx="8" fill="#182c25" stroke="#059669" stroke-width="1" />
+      <text x="452" y="21" class="badge-label" fill="#a7f3d0">🛒 Shopify &amp; Woo</text>
+    </g>
+
+    <!-- Metrics Strip -->
+    <g transform="translate(0, 205)">
+      <text x="0" y="0" font-family="system-ui" font-size="13" font-weight="600" fill="#64748b">
+        COMMUNITY CURATED • SAAS PLATFORMS • OPEN SOURCE SDKS • REAL-TIME BENCHMARKS
+      </text>
+    </g>
+  </g>
+</svg>
