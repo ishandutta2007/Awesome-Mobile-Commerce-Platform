@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Awesome-Mobile-Commerce-Platform
-
-=======
 # 📱 Awesome Mobile Commerce Platform [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p align="center">
